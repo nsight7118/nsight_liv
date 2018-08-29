@@ -9,11 +9,7 @@
 import Foundation
 import UIKit
 
-enum DiscussionViewModelItemType: Int
+class DiscussionViewModelItemTypeRowCount
 {
-    case title = 0
-    case profile_email
-    case about
-    case comments
-    case discussionAttributes
+    
 }

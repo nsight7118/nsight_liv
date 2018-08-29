@@ -13,4 +13,9 @@ class Comment
 {
     var id: Int8?
     var content: String?
+    
+    init(id:Int8, content:String){
+        let id = id
+        let content = content
+    }
 }
