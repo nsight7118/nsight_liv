@@ -12,6 +12,11 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        let dnahue = UIColor(red:172/255, green:178/255, blue:128/255,alpha: 1.0)
+        
+        self.view.backgroundColor = dnahue
+        
         // Do any additional setup after loading the view, typically from a nib.
     }
 
