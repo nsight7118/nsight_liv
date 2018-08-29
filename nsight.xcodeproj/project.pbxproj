@@ -86,6 +86,7 @@
 				F57ACE902135BEB800933C47 /* DiscussionViewModelEmailItem.swift */,
 				F57ACE932135BEB800933C47 /* DiscussionViewModelItem.swift */,
 				F57ACE8F2135BEB800933C47 /* DiscussionViewModelItemType.swift */,
+				F5522C672129B8B800A00D09 /* nsightTabController.swift */,
 				F57ACE942135BEB800933C47 /* DiscussionVIewModelTitleItem.swift */,
 			);
 			path = ViewModel;
@@ -114,7 +115,6 @@
 				F57ACE842135BCB500933C47 /* EmailCell.swift */,
 				F57ACE862135BDF500933C47 /* ViewModel */,
 				F5CA74B0212BA69600451FFC /* Model */,
-				F5522C672129B8B800A00D09 /* nsightTabController.swift */,
 				F5522C662129B8B800A00D09 /* DBScaffolding.swift */,
 				F5522C632129B8B800A00D09 /* nsightViewController.swift */,
 				F5522C642129B8B800A00D09 /* PostManager.swift */,

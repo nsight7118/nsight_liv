@@ -9,13 +9,13 @@
 import Foundation
 import UIKit
 
-class nsightTableViewController: UIViewController, UITableViewDataSource{
+class nsightTableViewController: UITableViewController {
     
     var viewModel = DiscussionViewModel()
     
     var item = DiscussionViewModelEmailItem(email:"Eureka");
     
-    @IBOutlet weak var tableView: UITableView!
+    //@IBOutlet weak var tableView: UITableView!
     
     override func viewDidLoad() {
         
@@ -23,7 +23,7 @@ class nsightTableViewController: UIViewController, UITableViewDataSource{
         
         super.viewDidLoad()
         
-        tableView.dataSource = self;
+        //tableView.dataSource = self;
         
         self.tableView?.register(EmailCell.self, forCellReuseIdentifier: "email")
         
@@ -31,11 +31,11 @@ class nsightTableViewController: UIViewController, UITableViewDataSource{
         
     }
     
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return 1
     }
     
-    func tableView(_ tableView: UITableView, cellForRowAt
+    override func tableView(_ tableView: UITableView, cellForRowAt
      indexPath: IndexPath) -> UITableViewCell {
      //let item = items[indexPath.section]
      //switch item.type {

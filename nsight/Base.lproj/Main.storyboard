@@ -97,51 +97,6 @@
             </objects>
             <point key="canvasLocation" x="2896.8000000000002" y="90.404797601199405"/>
         </scene>
-        <!--Most Recent-->
-        <scene sceneID="2hx-Yq-d41">
-            <objects>
-                <viewController id="Cvo-py-wOV" userLabel="Most Recent" customClass="nsightTableViewController" customModule="nsight" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="cSn-N5-XTe">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="EuD-C3-Z3C">
-                                <rect key="frame" x="16" y="86" width="343" height="500"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="CDP-wU-Yl3" customClass="EmailCell" customModule="nsight" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="28" width="343" height="44"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="CDP-wU-Yl3" id="79I-Fw-BBU">
-                                            <rect key="frame" x="0.0" y="0.0" width="343" height="43.5"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ubc-ws-7Xh">
-                                                    <rect key="frame" x="31" y="12" width="191" height="21"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <nil key="textColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                            </subviews>
-                                        </tableViewCellContentView>
-                                    </tableViewCell>
-                                </prototypes>
-                            </tableView>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <viewLayoutGuide key="safeArea" id="Ace-t5-V5I"/>
-                    </view>
-                    <tabBarItem key="tabBarItem" systemItem="mostRecent" id="wIr-oY-ydx"/>
-                    <connections>
-                        <outlet property="tableView" destination="EuD-C3-Z3C" id="IwT-cR-Ou4"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="wsJ-IQ-5Dr" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="2621.5999999999999" y="866.71664167916049"/>
-        </scene>
         <!--View Controller-->
         <scene sceneID="zYK-C0-lvz">
             <objects>
@@ -156,6 +111,25 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qz9-Dm-Bhl" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3429" y="868"/>
+        </scene>
+        <!--Item-->
+        <scene sceneID="Ppn-9W-xFT">
+            <objects>
+                <tableViewController storyboardIdentifier="nsightTableViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="TpJ-RH-D2i" customClass="nsightTableViewController" customModule="nsight" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="jaN-kw-0Gm">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <connections>
+                            <outlet property="dataSource" destination="TpJ-RH-D2i" id="C17-gj-T58"/>
+                            <outlet property="delegate" destination="TpJ-RH-D2i" id="6Bm-ax-py4"/>
+                        </connections>
+                    </tableView>
+                    <tabBarItem key="tabBarItem" title="Item" id="aB7-c4-LhJ"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Qir-Kd-iq1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2302" y="813"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="GED-ty-Ec3">
@@ -188,12 +162,12 @@
                     </tabBar>
                     <connections>
                         <segue destination="IXp-yB-Fht" kind="relationship" relationship="viewControllers" id="3iA-AT-L7A"/>
-                        <segue destination="Cvo-py-wOV" kind="relationship" relationship="viewControllers" id="yKU-XM-MEB"/>
+                        <segue destination="TpJ-RH-D2i" kind="relationship" relationship="viewControllers" id="xPv-LJ-gkb"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bQn-NQ-Wbs" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1957.5999999999999" y="90.404797601199405"/>
+            <point key="canvasLocation" x="1970" y="64"/>
         </scene>
     </scenes>
 </document>
